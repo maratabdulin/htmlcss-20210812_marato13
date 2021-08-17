@@ -1,1 +1,77 @@
 /* Стилизация кнопки */
+
+.button__primary-button {
+	height: 48px;
+	width: 182px;
+	border-radius: 8px;
+	border-width: 0px;
+	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+	background-color: var(--blue);
+	color: var(--white);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.button__primary-button:hover {
+	background-color: var(--deep-blue);
+}
+
+.button__primary-button:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.button__secondary-button {
+	height: 48px;
+	width: 182px;
+	border-radius: 8px;
+	border-width: 0px;
+	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+	background-color: var(--purple);
+	color: var(--white);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.button__secondary-button:hover {
+	background-color: var(--deep-purpule);
+}
+
+.button__secondary-button:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.button__alternate-button {
+	height: 48px;
+	width: 182px;
+	border-radius: 8px;
+	border-width: 0px;
+	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+	background-color: var(--white);
+	color: var(--gray-4);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	border: 1px solid var(--grey-3);
+}
+
+.button__alternate-button:hover {
+	border: 1px solid var(--black);
+}
+
+.button__alternate-button:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
