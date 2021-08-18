@@ -1,77 +1,62 @@
 /* Стилизация кнопки */
 
-.button__primary-button {
+.button {
 	height: 48px;
 	width: 182px;
 	border-radius: 8px;
-	border-width: 0px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.button_primary {
 	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 	background-color: var(--blue);
 	color: var(--white);
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
-	text-align: center;
+	border-width: 0px;
 }
 
-.button__primary-button:hover {
+.button_primary:hover {
 	background-color: var(--deep-blue);
 }
 
-.button__primary-button:disabled {
+.button_primary:disabled {
 	opacity: 0.5;
 	pointer-events: none;
 }
 
-.button__secondary-button {
-	height: 48px;
-	width: 182px;
-	border-radius: 8px;
-	border-width: 0px;
+.button_secondary {
 	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 	background-color: var(--purple);
 	color: var(--white);
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
-	text-align: center;
+	border-width: 0px;
 }
 
-.button__secondary-button:hover {
+.button_secondary:hover {
 	background-color: var(--deep-purpule);
 }
 
-.button__secondary-button:disabled {
+.button_secondary:disabled {
 	opacity: 0.5;
 	pointer-events: none;
 }
 
-.button__alternate-button {
-	height: 48px;
-	width: 182px;
-	border-radius: 8px;
-	border-width: 0px;
+.button_alternate {
 	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 	background-color: var(--white);
 	color: var(--gray-4);
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
-	text-align: center;
 	border: 1px solid var(--grey-3);
 }
 
-.button__alternate-button:hover {
+.button_alternate:hover {
 	border: 1px solid var(--black);
 }
 
-.button__alternate-button:disabled {
+.button_alternate:disabled {
 	opacity: 0.5;
 	pointer-events: none;
 }
