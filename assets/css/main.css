@@ -1,4 +1,5 @@
 @import '../fonts/fonts.css';
+@import 'sanitize.css';
 
 :root {
     --white: #ffffff;
