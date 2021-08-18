@@ -11,9 +11,6 @@
 	line-height: 19px;
 	text-align: center;
 	cursor: pointer;
-}
-
-.button_primary {
 	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 	background-color: var(--blue);
 	color: var(--white);
@@ -30,10 +27,7 @@
 }
 
 .button_secondary {
-	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 	background-color: var(--purple);
-	color: var(--white);
-	border-width: 0px;
 }
 
 .button_secondary:hover {
@@ -46,7 +40,6 @@
 }
 
 .button_alternate {
-	transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 	background-color: var(--white);
 	color: var(--gray-4);
 	border: 1px solid var(--grey-3);
