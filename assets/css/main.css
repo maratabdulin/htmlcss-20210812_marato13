@@ -1,12 +1,12 @@
-@import '../fonts/fonts.css';
-@import 'sanitize.css';
+@import "../fonts/fonts.css";
+@import "sanitize.css";
 
 :root {
     --white: #ffffff;
     --black: #212429;
     --pink: #f784ad;
     --purple: #7048e8;
-    --deep-purpule: #5028C6;
+    --deep-purpule: #5028c6;
     --blue: #4263eb;
     --deep-blue: #2342c0;
     --red: #f03d3e;
@@ -25,3 +25,5 @@
 * {
     font-family: "Roboto", sans-serif;
 }
+
+
