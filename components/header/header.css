@@ -58,7 +58,7 @@
 	line-height: 24px;
 }
 
-.header__nav_content a {
+.header__nav_link {
 	text-decoration: none;
 	color: var(--black);
 }
@@ -91,7 +91,7 @@
 	margin: 0;
 }
 
-.header__downsection_content a {
+.header__downsection_link {
 	text-decoration: none;
 	color: var(--black);
 }
