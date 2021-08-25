@@ -26,4 +26,17 @@
     font-family: "Roboto", sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
 
+.main {
+    background-color: var(--grey-1);
+    flex-grow: 1;
+}
+
+.main__box {
+    max-width: 1110px;
+    margin: 0 auto;
+}

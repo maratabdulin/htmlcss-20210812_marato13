@@ -7,29 +7,137 @@
     <link rel="stylesheet" href="./components/header/header.css">
     <link rel="stylesheet" href="./components/main/main.css">
     <link rel="stylesheet" href="./components/footer/footer.css">
+    <link rel="stylesheet" href="./components/card/card.css">
+    <link rel="stylesheet" href="./components/button/button.css">
+    <link rel="stylesheet" href="./components/histogram_preview/histogram_preview.css">
+    <link rel="stylesheet" href="./components/preview/preview.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
-<body>
-    <header class="header">
-        <div class="header__box">
-            <h1 class="header__title">Reusable component library</h1>
+<body class="page">
+    <header class="header header__box">
+        <div class="header__upsection">
+            <div class="header__logo">
+                <div class="header__logo_square"></div>
+                <div class="header__logo_circle"></div>
+                <div class="header__logo_triangle"></div>
+            </div>
+            <ul class="header__nav">
+                <li class="header__nav_content"><a class="header__nav_link" href="#">Components</a></li>
+                <li class="header__nav_content"><a class="header__nav_link" href="#">About</a></li>
+                <li class="header__nav_content"><a class="header__nav_link" href="#">Contact</a></li>
+            </ul>
         </div>
+        <h1 class="header__title">Reusable component library</h1>
+        <ul class="header__downsection">
+            <li class="header__downsection_content"><a class="header__downsection_link" href="#">All elements</a></li>
+            <li class="header__downsection_content"><a class="header__downsection_link" href="#">Elements</a></li>
+            <li class="header__downsection_content"><a class="header__downsection_link" href="#">Containers</a></li>
+            <li class="header__downsection_content"><a class="header__downsection_link" href="#">Templates</a></li>
+        </ul>
     </header>
+
     <main class="main">
         <div class="main__box">
-            main
+            <div class="preview">
+                <div class="card">
+                    <div class="card__preview_empty"></div>
+                    <div class="card__footer">
+                        <h2 class="card__title">Tooltip</h2>
+                        <p class="card__type">Container</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__preview_empty"></div>
+                    <div class="card__footer">
+                        <h2 class="card__title">Custom form elements</h2>
+                        <p class="card__type">Element</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__preview_empty"></div>
+                    <div class="card__footer">
+                        <h2 class="card__title">Calendar</h2>
+                        <p class="card__type">Container</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__preview_empty"></div>
+                    <div class="card__footer">
+                        <h2 class="card__title">Modal dialog</h2>
+                        <p class="card__type">Container</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__preview">
+                        <article class="histogram">
+                            <div class="histogram__title">
+                                <p class="histogram__title-text">Total orders</p>
+                                <a class="histogram__title-text histogram__title-link" href="#">View all</a>
+                            </div>
+                            <div class="histogram__date">
+                                <p class="histogram__date-text">50254</p>
+                            </div>
+                            <div class="histogram__graph">
+                                <div class="histogram__progressbar " style='height: 100%;'></div>
+                                <div class="histogram__progressbar " style='height: 70%;'></div>
+                                <div class="histogram__progressbar " style='height: 44%;'></div>
+                                <div class="histogram__progressbar " style='height: 78%;'></div>
+                                <div class="histogram__progressbar " style='height: 100%;'></div>
+                                <div class="histogram__progressbar " style='height: 44%;'></div>
+                                <div class="histogram__progressbar " style='height: 60%;'></div>
+                                <div class="histogram__progressbar " style='height: 78%;'></div>
+                                <div class="histogram__progressbar " style='height: 100%;'></div>
+                                <div class="histogram__progressbar " style='height: 22%;'></div>
+                                <div class="histogram__progressbar " style='height: 44%;'></div>
+                                <div class="histogram__progressbar " style='height: 60%;'></div>
+                                <div class="histogram__progressbar " style='height: 70%;'></div>
+                                <div class="histogram__progressbar " style='height: 22%;'></div>
+                                <div class="histogram__progressbar " style='height: 100%;'></div>
+                                <div class="histogram__progressbar " style='height: 22%;'></div>
+                                <div class="histogram__progressbar " style='height: 78%;'></div>
+                                <div class="histogram__progressbar " style='height: 60%;'></div>
+                                <div class="histogram__progressbar " style='height: 44%;'></div>
+                                <div class="histogram__progressbar " style='height: 70%;'></div>
+                                <div class="histogram__progressbar " style='height: 60%;'></div>
+                                <div class="histogram__progressbar " style='height: 22%;'></div>
+                                <div class="histogram__progressbar " style='height: 78%;'></div>
+                                <div class="histogram__progressbar " style='height: 70%;'></div>
+                                <div class="histogram__progressbar " style='height: 90%;'></div>
+                                <div class="histogram__progressbar " style='height: 60%;'></div>
+                                <div class="histogram__progressbar " style='height: 22%;'></div>
+                                <div class="histogram__progressbar " style='height: 70%;'></div>
+                                <div class="histogram__progressbar " style='height: 34%;'></div>
+
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card__footer">
+                        <h2 class="card__title">Histogram</h2>
+                        <p class="card__type">Element</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__preview_empty"></div>
+                    <div class="card__footer">
+                        <h2 class="card__title">Avatar</h2>
+                        <p class="card__type">Element</p>
+                    </div>
+                </div>
+                <div class="card__button">
+                    <button class="button button_alternate" type="button">Load more</button>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer__box">
-            <h2 class="footer__title">About</h2>
-            <p class="footer__content">This project is a collection of professionally designed, pre-built, fully
-                responsive HTML snippets you can drop into your projects. Get started by checking out our free
-                preview
-                components, or browsing the PNG previews in the categories you're most curious about.</p>
-        </div>
+
+    <footer class="footer footer__box">
+        <h2 class="footer__title">About</h2>
+        <p class="footer__content">This project is a collection of professionally designed, pre-built, fully
+            responsive HTML snippets you can drop into your projects. Get started by checking out our free
+            preview
+            components, or browsing the PNG previews in the categories you're most curious about.</p>
     </footer>
 
 </body>
