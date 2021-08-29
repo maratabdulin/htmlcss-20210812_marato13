@@ -12,6 +12,10 @@
 	display: block;
 }
 
+.tooltip_icon {
+	color: var(--black);
+}
+
 .tooltip__help {
 	display: none;
 	background: var(--blue);
