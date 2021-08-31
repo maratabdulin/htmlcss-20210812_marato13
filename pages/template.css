@@ -1,0 +1,77 @@
+.body {
+	display: grid;
+	grid-template-columns: 212px 1fr;
+	grid-template-rows: 118px 1fr 130px;
+	grid-template-areas: "header header" "aside main" "footer footer";
+	background-color: var(--grey-1);
+}
+.body__box {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.header__template {
+	grid-area: header;
+	background-color: var(--grey-1);
+	padding-top: 25px;
+}
+
+.main {
+	grid-area: main;
+}
+.main__window {
+	background-color: var(--white);
+	height: 100%;
+	width: 100%;
+	border-radius: 12px;
+	box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+}
+
+.aside {
+	grid-area: aside;
+}
+
+.aside__title {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	color: var(--black);
+	margin: 0 0 16px 0;
+}
+.aside__list {
+	list-style: none;
+	padding: 0;
+}
+
+.aside__list-elem {
+	margin-left: 0;
+	padding-left: 0;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+
+.aside__list-elem:hover {
+	color: var(--red);
+}
+.footer {
+	grid-area: footer;
+	align-self: center;
+	justify-self: center;
+}
+
+.footer__content {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--grey-3);
+}
