@@ -1,0 +1,39 @@
+.aside {
+	grid-area: aside;
+	padding-left: 15px;
+}
+
+.aside__title {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	color: var(--black);
+	margin: 0 0 16px 0;
+}
+.aside__list {
+	list-style: none;
+	padding: 0;
+}
+
+.aside__list-elem {
+	margin-left: 0;
+	padding-left: 0;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 4px;
+}
+
+.aside__list-elem:hover {
+	color: var(--red);
+}
+
+@media (max-width: 768px) {
+	.aside {
+		display: none;
+	}
+}

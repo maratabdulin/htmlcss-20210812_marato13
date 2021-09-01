@@ -1,0 +1,20 @@
+.body {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 212px 1fr;
+	grid-template-rows: 118px 1fr 130px;
+	grid-template-areas: "header header" "aside main" "footer footer";
+	background-color: var(--grey-1);
+}
+.body__box {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.body {
+		grid-template-areas: "header" "main";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+	}
+}
