@@ -96,19 +96,19 @@
 	color: var(--black);
 }
 
-.header__component {
+.header-component {
 	grid-area: header;
 	background-color: var(--grey-1);
 	padding: 25px 15px 0px 15px;
 }
 
-.header__mobile-menu {
+.header__burger {
 	display: none;
 }
 
 @media (max-width: 768px) {
 	.header,
-	.header__component {
+	.header-component {
 		padding: 0;
 	}
 
@@ -129,7 +129,7 @@
 		justify-self: center;
 	}
 
-	.header__mobile-menu {
+	.header__burger {
 		display: block;
 		background: url(../../assets/images/mobile-menu.svg);
 		width: 24px;

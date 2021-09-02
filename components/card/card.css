@@ -66,13 +66,7 @@
 	margin: 0;
 }
 
-.card__button {
-	margin: 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	padding-bottom: 92px;
-}
+
 
 @media (max-width: 768px) {
 	.card__type {
@@ -83,7 +77,5 @@
 		line-height: 24px;
 	}
 
-	.card__button {
-		display: none;
-	}
+	
 }
