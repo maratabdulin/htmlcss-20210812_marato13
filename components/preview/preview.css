@@ -1,8 +1,27 @@
 .preview {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 350px);
 	margin: 0;
-	flex-wrap: wrap;
 	grid-gap: 30px;
-	padding: 64px 0px 58px;
+	padding: 64px 15px 58px;
+}
+
+.preview__footer {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 92px;
+}
+
+@media (max-width: 768px) {
+	.preview {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 16px;
+		padding: 16px;
+	}
+
+	.preview__footer {
+		display: none;
+	}
 }
