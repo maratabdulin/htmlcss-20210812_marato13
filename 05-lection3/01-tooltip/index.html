@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <!-- Страница с тултипом -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./tooltip.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./tooltip.css">
+</head>
+
+<body>
+    <div class="tooltip">
+        <div class="tooltip__trigger">
+            <svg class="tooltip_icon">
+                <use xlink:href="./tooltip.svg#tooltip">
+                </use>
+            </svg>
+        </div>
+        <div class="tooltip__help">
+            Helper text
+        </div>
+    </div>
+
+</body>
+
 </html>
