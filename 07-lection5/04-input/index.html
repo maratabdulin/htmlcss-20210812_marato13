@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+    <label class="input" tabindex="1">
+        <input type="text" class="input__text" placeholder="Placeholder">
+        <div class="input__state">
+        </div>
+    </label>
+    <label class="input" tabindex="1">
+        <input type="text" class="input__text" placeholder="Success">
+        <div class="input__state input__state_success">
+        </div>
+    </label>
+    <label class="input" tabindex="1">
+        <input type="text" class="input__text" placeholder="Filled Input">
+        <div class="input__state">
+        </div>
+    </label>
+    <label class="input" tabindex="1">
+        <input type="text" class="input__text input__text_invalid" placeholder="Erorr">
+        <div class="input__state input__state_invalid">
+        </div>
+    </label>
+</body>
+
 </html>
