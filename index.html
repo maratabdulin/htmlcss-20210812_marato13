@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="./components/footer/footer.css">
     <link rel="stylesheet" href="./components/card/card.css">
     <link rel="stylesheet" href="./components/button/button.css">
-    <link rel="stylesheet" href="./components/histogram_preview/histogram_preview.css">
     <link rel="stylesheet" href="./components/preview/preview.css">
+    <link rel="stylesheet" href="./components/tabs/tabs.css">
+    <link rel="stylesheet" href="./components/histogram_preview/histogram_preview.css">
+    <link rel="stylesheet" href="./components/tooltip-preview/tooltip-preview.css">
+    <link rel="stylesheet" href="./components/custom-form-elements-preview/custom-form-elements.css">
+    <link rel="stylesheet" href="./components/calendar-preview/calendar-preview.css">
+    <link rel="stylesheet" href="./components/avatar-preview/avatar-preview.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -31,21 +36,45 @@
             </ul>
         </div>
         <h1 class="header__title">Reusable component library</h1>
-        <ul class="header__downsection">
-            <li class="header__downsection_content"><a class="header__downsection_link" href="#">All elements</a></li>
-            <li class="header__downsection_content"><a class="header__downsection_link" href="#">Elements</a></li>
-            <li class="header__downsection_content"><a class="header__downsection_link" href="#">Containers</a></li>
-            <li class="header__downsection_content"><a class="header__downsection_link" href="#">Templates</a></li>
-        </ul>
+
+        <div class="tabs">
+            <label class="tabs__container">
+                <input class="tabs__input" type="radio" name="tabs" id="#all-tab" checked>
+                <div class="tabs__title">All elements</div>
+            </label>
+            <label class="tabs__container">
+                <input class="tabs__input" type="radio" name="tabs" id="#elem-tab">
+                <div class="tabs__title">Elements</div>
+            </label>
+            <label class="tabs__container">
+                <input class="tabs__input" type="radio" name="tabs" id="#cont-tab">
+                <div class="tabs__title">Containers</div>
+            </label>
+            <label class="tabs__container">
+                <input class="tabs__input" type="radio" name="tabs" id="#templ-tab">
+                <div class="tabs__title">Templates</div>
+            </label>
+        </div>
     </header>
 
     <main class="main">
         <div class="main__box">
             <div class="preview">
-
                 <div class="card">
                     <div class="card__preview-wraper">
-                        <div class="card__preview_empty"></div>
+                        <div class="card__preview">
+                            <div class="tooltip">
+                                <div class="tooltip__trigger">
+                                    <svg class="tooltip_icon">
+                                        <use xlink:href="./assets/images/tooltip.svg#tooltip">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="tooltip__help">
+                                    Helper text
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card__footer">
                         <h2 class="card__title">Tooltip</h2>
@@ -53,10 +82,87 @@
                     </div>
                 </div>
 
-
                 <div class="card">
                     <div class="card__preview-wraper">
-                        <div class="card__preview_empty"></div>
+                        <div class="card__preview">
+                            <div class="custom-form-elements">
+                                <label class="checkbox" tabindex="2">
+                                    <input type="checkbox" class="checkbox__input">
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg height="13" viewBox="0 0 15 13" class="checkbox__icon" fill="none">
+                                                <use xlink:href=".\assets\images\checkbox.svg#checkbox">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="checkbox__label">
+                                            Default
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="radio" tabindex="1">
+                                    <input type="radio" class="radio__input" id="radioButton1" name="radio">
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__icon"></div>
+                                        </div>
+                                        <div class="radio__label">
+                                            Default
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="checkbox" tabindex="2">
+                                    <input type="checkbox" class="checkbox__input" checked>
+                                    <div class=" checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg height="13" viewBox="0 0 15 13" class="checkbox__icon" fill="none">
+                                                <use xlink:href=".\assets\images\checkbox.svg#checkbox">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="checkbox__label">
+                                            Checked
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="radio" tabindex="2">
+                                    <input type="radio" class="radio__input" id="radioButton2" name="radio" checked>
+                                    <div class=" radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__icon"></div>
+                                        </div>
+                                        <div class="radio__label">
+                                            Selected
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="checkbox" tabindex="3" disabled>
+                                    <input type="checkbox" class="checkbox__input" disabled>
+                                    <div class="checkbox__state">
+                                        <div class="checkbox__control">
+                                            <svg height="13" viewBox="0 0 15 13" class="checkbox__icon" fill="none">
+                                                <use xlink:href=".\assets\images\checkbox.svg#checkbox">
+                                                </use>
+                                            </svg>
+                                        </div>
+                                        <div class="checkbox__label">
+                                            Disabled
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="radio" tabindex="3" disabled>
+                                    <input type="radio" class="radio__input" id="radioButton3" name="radio" disabled>
+                                    <div class="radio__state">
+                                        <div class="radio__control">
+                                            <div class="radio__icon"></div>
+                                        </div>
+                                        <div class="radio__label">
+                                            Disabled
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="card__footer">
                         <h2 class="card__title">Custom form elements</h2>
@@ -66,7 +172,69 @@
 
                 <div class="card">
                     <div class="card__preview-wraper">
-                        <div class="card__preview_empty"></div>
+                        <div class="card__preview">
+                            <div class="calendar">
+                                <div class="calendar__title">October 2019</div>
+                                <div class="calendar__wrapper">
+                                    <div class="calendar__inner">
+                                        <span class="calendar__item calendar__item-day">Mon</span>
+                                        <span class="calendar__item calendar__item-day">Tue</span>
+                                        <span class="calendar__item calendar__item-day">Wed</span>
+                                        <span class="calendar__item calendar__item-day">Thu</span>
+                                        <span class="calendar__item calendar__item-day">Fri</span>
+                                        <span class="calendar__item calendar__item-day">Sat</span>
+                                        <span class="calendar__item calendar__item-day">Sun</span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item">1</span>
+                                        <span class="calendar__item">2</span>
+                                        <span class="calendar__item">3</span>
+                                        <span class="calendar__item">4</span>
+                                        <span class="calendar__item">5</span>
+                                        <span class="calendar__item">6</span>
+                                        <span class="calendar__item">7</span>
+                                        <span class="calendar__item">8</span>
+                                        <span class="calendar__item">9</span>
+                                        <span class="calendar__item">10</span>
+                                        <span class="calendar__item">11</span>
+                                        <span class="calendar__item">12</span>
+                                        <span class="calendar__item">13</span>
+                                        <span class="calendar__item">14</span>
+                                        <span class="calendar__item">15</span>
+                                        <span class="calendar__item">16</span>
+                                        <span class="calendar__item">17</span>
+                                        <span class="calendar__item calendar__item-active">18</span>
+                                        <div class="calendar__item_wrapper">
+                                            <span class="calendar__item_bg"></span>
+                                            <span class="calendar__item calendar__item-between-active">19</span>
+                                        </div>
+                                        <div class="calendar__item_wrapper">
+                                            <span class="calendar__item_bg"></span>
+                                            <span class="calendar__item calendar__item-between-active">20</span>
+                                        </div>
+                                        <div class="calendar__item_wrapper">
+                                            <span class="calendar__item_bg"></span>
+                                            <span class="calendar__item calendar__item-between-active">21</span>
+                                        </div>
+                                        <div class="calendar__item_wrapper">
+                                            <span class="calendar__item_bg"></span>
+                                            <span class="calendar__item calendar__item-between-active">22</span>
+                                        </div>
+                                        <span class="calendar__item calendar__item-active">23</span>
+                                        <span class="calendar__item">24</span>
+                                        <span class="calendar__item">25</span>
+                                        <span class="calendar__item">26</span>
+                                        <span class="calendar__item">27</span>
+                                        <span class="calendar__item">28</span>
+                                        <span class="calendar__item">29</span>
+                                        <span class="calendar__item">30</span>
+                                        <span class="calendar__item">31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card__footer">
                         <h2 class="card__title">Calendar</h2>
@@ -76,7 +244,8 @@
 
                 <div class="card">
                     <div class="card__preview-wraper">
-                        <div class="card__preview_empty"></div>
+                        <div class="card__preview">
+                        </div>
                     </div>
                     <div class="card__footer">
                         <h2 class="card__title">Modal dialog</h2>
@@ -138,7 +307,11 @@
 
                 <div class="card">
                     <div class="card__preview-wraper">
-                        <div class="card__preview_empty"></div>
+                        <div class="card__preview">
+                            <div class="avatar">
+                                <img class="avatar__image" src="./assets/images/avatar-200.jpg" alt="Аватар">
+                            </div>
+                        </div>
                     </div>
                     <div class="card__footer">
                         <h2 class="card__title">Avatar</h2>

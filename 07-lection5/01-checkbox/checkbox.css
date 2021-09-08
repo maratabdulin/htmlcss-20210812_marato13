@@ -1,11 +1,12 @@
 .checkbox {
 	display: inline-block;
+	width: 50%;
 }
 
 .checkbox__state {
 	display: flex;
 	align-items: center;
-	cursor: pointer;
+	cursor: pointer;	
 }
 
 .checkbox__label {

@@ -1,0 +1,83 @@
+.calendar {
+	width: 250px;
+	border: 1px solid var(--grey-3);
+	box-sizing: border-box;
+	border-radius: 8px;
+	background: var(--white);
+	padding: 10px;
+}
+
+.calendar__title {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--black);
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+.calendar__wrapper {
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.calendar__inner {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	align-items: stretch;
+	justify-items: stretch;
+}
+
+.calendar__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Source Sans Pro";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: var(--black);
+}
+.calendar__item-day {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--grey-3);
+	text-align: center;
+}
+.calendar__item-active {
+	background-color: var(--blue);
+	color: var(--white);
+}
+.calendar__item-between-active {
+	color: var(--black);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.calendar__item_wrapper {
+	position: relative;
+}
+
+.calendar__item_bg {
+	background: var(--blue);
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
