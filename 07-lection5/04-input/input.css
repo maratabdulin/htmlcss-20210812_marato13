@@ -21,15 +21,15 @@
 	outline-offset: 0;
 }
 
-.input__text_invalid {
+.input_invalid .input__text {
 	border-color: var(--red);
 }
 
-.input__text:focus {
+.input .input__text:focus {
 	border-color: var(--blue);
 }
 
-.input__text_invalid:focus {
+.input_invalid .input__text:focus {
 	border: 1px solid var(--red);
 }
 
@@ -42,9 +42,9 @@
 	right: 16px;
 }
 
-.input__state_success {
+.input_success .input__state {
 	background-image: url(./images/success.svg);
 }
-.input__state_invalid {
+.input_invalid .input__state {
 	background-image: url(./images/invalid.svg);
 }
