@@ -30,7 +30,7 @@
 }
 
 .input_invalid .input__text:focus {
-	border: 1px solid var(--red);
+	border-color: var(--red);
 }
 
 .input__state {
